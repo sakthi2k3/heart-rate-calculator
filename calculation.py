@@ -9,7 +9,7 @@ def hearbeat(filename):
         red.append(lp[0])
 
     m=max(red)
-    hr=m*fps/60-30
+    hr=((m*60*0.25)/fps)-30
     """" 30 has been subracted to get the value more accurate"""
     return round(hr,2)
 
