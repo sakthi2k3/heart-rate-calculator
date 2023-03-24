@@ -1,0 +1,55 @@
+<link
+rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+crossorigin="anonymous"
+/>
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #223141; color: #212529; font-size: 1rem; font-weight: 400; line-height: 1.5; text-align: left;">
+    <div class="container-fluid" >
+      <a class="navbar-brand" style="color: #ffffff; font-family: Oswald, sans-serif;" id="text" href="#">Career <span class="brand" style="color: #0a6fe9; font-family: Oswald, sans-serif;">Guidance</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" id="active" aria-current="page" href="/" style="color: #d35400">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="links" href="/intrest" style="color: #ffffff">intrest</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+
+<h1 style="font-size: 40px">Doctor</h1>
+<div>
+    <div style="float: right">
+        <p style="text-align:center;"><img src={{data['image']}} height="300px" width="600px"></p>
+    </div>
+    <div>
+        {%for i in data['para']%}
+        <p style="font-size: xx-large;">{{i}}</p>  
+        {% endfor %} 
+
+    </div>    
+</div>
+<h1>Types:</h1>
+<ul style="font-size: xx-large;">
+    {%for i in data['types']%}
+    <li>{{i}}</li>
+    {% endfor %} 
+
+</ul>    
+
+
+
+
+
+
+
+
+
